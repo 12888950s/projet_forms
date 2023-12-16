@@ -90,6 +90,7 @@ const CreateForm = () => {
 					return (
 						<React.Fragment key={index}>
 							<p className="question"> {`${que.id}. ${que.question}`} </p>
+							<div className="place-response">
 							{que.type == "1" && (
 								<div key={que.id}>
 									<textarea
@@ -142,16 +143,17 @@ const CreateForm = () => {
 									})}
 								</div>
 							)}
+							</div>
 						</React.Fragment>
 					);
 				})}
 			</div>
 			<div className="form-footer">
-				<button className="add-question-btn btn" onClick={() => addQuestion()}>
-					Add Question
+				<button className="add-question-btn button" onClick={() => addQuestion()}>
+					<span className="text">Add Question</span>
 				</button>
-				<button className="save-form-btn btn" onClick={() => saveForm()}>
-					Save
+				<button className="save-form-btn button" onClick={() => saveForm()}>
+					<span className="text">Save</span>
 				</button>
 			</div>
 
