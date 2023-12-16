@@ -2,40 +2,68 @@
 	width: inherit;
 	height: inherit;
 	display: flex;
+	align-items: center;
+	justify-content: center;
 	flex-direction: column;
 }
-
+/* Start Styling Text */
 .no-form-text {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	margin-top: 10%;
+	margin-bottom: 50px;
+	font-size: 30px;
+	font-weight: 500;
+	color: #51C4D3;
 }
+/* End Styling Text */
 
+/* Start Styling Button */
 .button-container {
+	width: 200px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-#create-form-btn {
+a .btn {
 	cursor: pointer;
-	height: 30px;
-	width: fit-content;
-	border: 1px solid grey;
-	border-radius: 0.625rem;
-	background-color: #f7f7f7;
+	height: 65px;
+	width: 180px;
+	font-weight: 500;
+	font-size: 20px;
+	border: none;
+	border-radius: 35px;
+	background:#51C4D3;
+	color: white;
 	padding: 0px 10px;
+	transition: all 0.4s;
 }
 
+a .btn:hover {
+	background: transparent;
+	color: #26bbdc;
+	border: 1px solid #26bbdc;
+}
+/* End Styling Button */
+
+/* Start Styling Table */
 table {
-	font-family: arial, sans-serif;
 	border-collapse: collapse;
 	margin: 5rem 20rem;
 }
 
-td,
 th {
-	border: 0.5px solid lightgray;
-	text-align: left;
-	padding: 8px;
+	background-color: #40adbb;
+	font-size: 18px;
+	color: white;
 }
+
+tr:nth-child(even){
+	background-color: #fcfcfc;
+}
+
+td, th {
+	border: 0.5px solid #D8E3E7;
+	text-align: left;
+	padding: 15px;
+}
+/* End Styling Table */
