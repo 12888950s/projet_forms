@@ -1,12 +1,11 @@
 .form-container {
 	padding: 1.25rem;
-	height: inherit;
-	width: inherit;
 	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10%;
 }
-
 .response-form-title {
 	font-family: Mulish;
 	font-size: 24px;
@@ -21,12 +20,16 @@
 
 .btn {
 	cursor: pointer;
-	height: 1.875rem;
-	width: fit-content;
-	border: 0.0625rem solid grey;
-	border-radius: 0.625rem;
-	background-color: #f7f7f7;
-	padding: 0px 0.625rem;
+	height: 50px;
+	width: 100px;
+	font-weight: 500;
+	font-size: 20px;
+	border: none;
+	border-radius: 35px;
+	background:#51C4D3;
+	color: white;
+	padding: 0px 10px;
+	transition: all 0.4s;
 }
 
 .form-body {

@@ -1,27 +1,30 @@
 .form-container {
 	padding: 1.25rem;
-	height: inherit;
-	width: inherit;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
+	margin-top: 10%;
 }
 
 .form-title {
 	height: 2.1875rem;
 	width: 20rem;
-	border: 0.0313rem solid lightgray;
+	max-width: 30rem; /* Limiter la largeur pour éviter qu'elle ne devienne trop large */
+	border: 1px solid lightgray; /* Augmenter légèrement l'épaisseur de la bordure */
 	background-color: #f7f7f7;
-	border-radius: 10px;
+	border-radius: 10px; /* Légèrement réduire le rayon de la bordure */
 	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-	padding: 0px 20px;
-	letter-spacing: 1px;
-	font-size: 16px;
-}
+	padding: 0.5rem 1rem; /* Ajouter un peu de rembourrage pour plus d'espace à l'intérieur */
+	letter-spacing: 0.5px; /* Réduire légèrement l'espacement entre les lettres */
+	font-size: 1rem; /* Utiliser une taille de police plus petite pour une apparence plus équilibrée */
+	box-sizing: border-box; /* Inclure la bordure et le padding dans la largeur et la hauteur */
+	outline: none; /* Supprimer la bordure autour du champ lorsque focus */
+  }
 
 .form-title:focus {
-	border: 0.0313rem solid lightgray;
-	background-color: #dad8d8;
+	border: 1px solid #51C4D3; /* Couleur de la bordure lorsqu'il est en focus */
+  background-color: #ecf0f1;
 }
 
 .form-title::placeholder {
@@ -40,7 +43,7 @@
 	width: fit-content;
 	border: 0.0625rem solid grey;
 	border-radius: 0.625rem;
-	background-color: #f7f7f7;
+	background-color: #ac1e1e;
 	margin-right: 0.625rem;
 }
 
@@ -65,7 +68,10 @@
 	border-radius: 0.625rem;
 	border: 0.5px solid lightgray;
 	padding: 0px 1rem;
+
 }
+
+
 
 .new-question-input::placeholder {
 	font-family: consolas;
