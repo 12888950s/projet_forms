@@ -80,20 +80,22 @@ const FormResponse = () => {
 						<div className="form-header">
 							<span className="response-form-title">{form[0].formJson.title}</span>
 						</div>
-						{form[0].formJson.body.map((que, index) => {
-							return (
-								<React.Fragment key={index}>
-									<p className="question"> {`${que.id}. ${que.question}`} </p>
-									<CustomInput que={que} onChange={(e, que, index) => handleOnChange(e, que, index)} />
-								</React.Fragment>
-							);
-						})}
+						<div className="list-question">
+							{form[0].formJson.body.map((que, index) => {
+								return (
+									<React.Fragment key={index}>
+										<p className="question"> {`${que.id}. ${que.question}`} </p>
+										<CustomInput que={que} onChange={(e, que, index) => handleOnChange(e, que, index)} />
+									</React.Fragment>
+								);
+							})}
+						</div>
 					</>
 				)}
 
 				<div className="form-footer">
-					<button className="save-response-btn btn" onClick={() => saveResponse()}>
-						Save Response
+					<button className="save-response-btn button" onClick={() => saveResponse()}>
+						<span class="text">Save Response</span>
 					</button>
 				</div>
 			</div>

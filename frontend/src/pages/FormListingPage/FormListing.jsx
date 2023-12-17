@@ -52,7 +52,7 @@ const FormListing = () => {
 
 			<div className="button-container">
 				<Link to="/create-form">
-					<button className="btn" id="create-form-btn">Create form</button>
+					<button className="button" id="create-form-btn"><span className="text">Create form</span></button>
 				</Link>
 			</div>
 		</div>

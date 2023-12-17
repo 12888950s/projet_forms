@@ -1,122 +1,202 @@
 .form-container {
-	padding: 1.25rem;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	margin-top: 10%;
+    padding: 20px; /* Assuming 1.25rem is equivalent to 20px */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Start Styling Input */
+.form-header {
+    margin-bottom: 15px;
+    width: 650px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #51C4D3, #D8E3E7);
+    border-radius: 30px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
 }
 
 .form-title {
-	height: 2.1875rem;
-	width: 20rem;
-	max-width: 30rem; /* Limiter la largeur pour éviter qu'elle ne devienne trop large */
-	border: 1px solid lightgray; /* Augmenter légèrement l'épaisseur de la bordure */
-	background-color: #f7f7f7;
-	border-radius: 10px; /* Légèrement réduire le rayon de la bordure */
-	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-	padding: 0.5rem 1rem; /* Ajouter un peu de rembourrage pour plus d'espace à l'intérieur */
-	letter-spacing: 0.5px; /* Réduire légèrement l'espacement entre les lettres */
-	font-size: 1rem; /* Utiliser une taille de police plus petite pour une apparence plus équilibrée */
-	box-sizing: border-box; /* Inclure la bordure et le padding dans la largeur et la hauteur */
-	outline: none; /* Supprimer la bordure autour du champ lorsque focus */
-  }
+    width: 620px;
+    height: 40px;
+    border: none;
+    outline: none;
+    caret-color: #1b9ab7;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    padding-left: 15px;
+    letter-spacing: 0.8px;
+    color: rgb(19, 19, 19);
+    font-size: 13.4px;
+}
 
 .form-title:focus {
-	border: 1px solid #51C4D3; /* Couleur de la bordure lorsqu'il est en focus */
-  background-color: #ecf0f1;
+    border: 1px solid #51C4D3;
 }
 
 .form-title::placeholder {
-	font-family: consolas;
+    font-family: consolas;
+}
+/* End Styling Input */
+
+/* Start main Styling Button */
+.form-footer {
+    margin: 20px; /* Assuming 1.25rem is equivalent to 20px */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    gap: 40px;
 }
 
-.form-footer {
-	margin: 1.25rem;
-	display: flex;
-	gap: 1rem;
+.button {
+    align-items: center;
+    background-image: linear-gradient(144deg, #126E82, #51C4D3 50%, #00DDEB);
+    border: 0;
+    border-radius: 35px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-size: 18px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.button:active,
+.button:hover {
+    outline: 0;
+    color: white;
+}
+
+.button span {
+    background-color: white;
+    color: #51C4D3;
+    font-weight: 500;
+    padding: 16px 24px;
+    border-radius: 35px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+}
+
+.button:hover span {
+    background: none;
+    color: white;
+}
+/* End Button */
+
+/* Start Styling add-new-question Button */
+.add-new-question-btn-container {
+    width: 220px;
+    display: flex;
+    gap: 20px;
 }
 
 .btn {
-	cursor: pointer;
-	height: 1.875rem;
-	width: fit-content;
-	border: 0.0625rem solid grey;
-	border-radius: 0.625rem;
-	background-color: #ac1e1e;
-	margin-right: 0.625rem;
+    width: 100px;
+    height: 30px;
+    background-image: linear-gradient(144deg, #126E82, #51C4D3 50%, #00DDEB);
+    box-sizing: border-box;
+    border: 0;
+    color: white;
+    border-radius: 35px;
+    cursor: pointer;
+    font-size: 14px;
 }
+/* End Styling add-new-question Button */
 
+/* Start Styling new-question-container */
 .new-question-container {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	justify-items: center;
-	gap: 1rem;
-	width: 35rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-items: center;
+    gap: 1rem;
+    width: 35rem;
 }
 
 .new-question-header {
-	display: flex;
-	gap: 1rem;
-	align-items: center;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
 }
 
 .new-question-input {
-	height: 1.875rem;
-	width: 25rem;
-	border-radius: 0.625rem;
-	border: 0.5px solid lightgray;
-	padding: 0px 1rem;
-
+    height: 30px; /* Assuming 1.875rem is equivalent to 30px */
+    width: 400px; /* Assuming 25rem is equivalent to 400px */
+    border-radius: 10px;
+    border: 0.5px solid lightgray;
+    padding: 0px 10px; /* Assuming 1rem is equivalent to 10px */
 }
 
-
-
 .new-question-input::placeholder {
-	font-family: consolas;
+    font-family: consolas;
 }
 
 .new-question-body {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 }
 
 .select-question-type-container {
-	display: flex;
-	gap: 1rem;
-	align-items: center;
-	width: 100%;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    width: 100%;
 }
 
 .select-question-type {
-	height: 1.875rem;
-	border-radius: 10px;
-	border: 0.5px solid lightgray;
+    height: 30px; /* Assuming 1.875rem is equivalent to 30px */
+    border-radius: 10px;
+    border: 0.5px solid lightgray;
 }
 
 .options-input {
-	margin-top: 0.5rem;
+    margin-top: 5px;
 }
 
 .option {
-	display: grid;
-	grid-template-columns: auto 1fr;
-	gap: 7px;
-	justify-content: center;
-	align-items: center;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 7px;
+    justify-content: center;
+    align-items: center;
 }
 
 .optionInput {
-	height: 1rem;
-	width: 1rem;
+    height: 10px; /* Assuming 1rem is equivalent to 10px */
+    width: 10px; /* Assuming 1rem is equivalent to 10px */
+}
+/* End Styling new-question-container */
+
+.question {
+	font-size: 18px;
 }
 
-.form-body {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	width: 50rem;
+.place-response {
+	margin-left: 10px;
 }
+.form-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 550px; /* Assuming 50rem is equivalent to 800px */
+}
+
